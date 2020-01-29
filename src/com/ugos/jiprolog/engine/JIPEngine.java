@@ -318,6 +318,7 @@ public class JIPEngine implements Serializable
             if(entry.getName().endsWith(".pl"))
             {
                 String strCurSarchPath = "";
+                System.out.println("Load "+entry);
                 final InputStream ins = library.getInputStream(entry);
                 try
                 {

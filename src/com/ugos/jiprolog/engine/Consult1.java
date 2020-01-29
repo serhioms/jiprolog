@@ -157,7 +157,7 @@ class Consult1 extends BuiltIn
 
     static final Vector<PrologObject> consult(InputStream ins, String strStreamName, JIPEngine engine, int nQueryHandle, boolean enableClauseChecks)
     {
-//        System.out.println("consult");
+        //System.out.println("consult");
 
         int strOldInputStreamName = 0;
         InputStream oldins = null;

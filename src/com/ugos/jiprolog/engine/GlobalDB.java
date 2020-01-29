@@ -512,8 +512,8 @@ final class GlobalDB extends Object// implements Cloneable //Serializable
     // called by assert
     private final synchronized void addClause(final Clause clause, final boolean bFirst, final String strFile, boolean dynamic)
     {
-        if(!m_bCheckDisabled && isSystem((Functor)clause.getHead()))
-        	throw new JIPPermissionException("modify", "static_procedure", ((Functor)clause.getHead()).getPredicateIndicator(), jipEngine);
+//        if(!m_bCheckDisabled && isSystem((Functor)clause.getHead()))
+//        	throw new JIPPermissionException("modify", "static_procedure", ((Functor)clause.getHead()).getPredicateIndicator(), jipEngine);
 
         // Estrae il nome del funtore
         PrologObject head = clause.getHead();
@@ -544,7 +544,7 @@ final class GlobalDB extends Object// implements Cloneable //Serializable
                 String strFileName = (String)m_pred2FileMap.get(strFunctName);
                 if(!strFileName.equals(strFile) && !isMultifile(((Functor)head).getName()))
                 {
-                	throw new JIPPermissionException("modify", "static_procedure", Functor.getPredicateIndicator(strFunctName), jipEngine);
+                	//throw new JIPPermissionException("modify", "static_procedure", Functor.getPredicateIndicator(strFunctName), jipEngine);
                 }
             }
         }

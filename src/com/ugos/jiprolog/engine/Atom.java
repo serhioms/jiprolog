@@ -68,16 +68,16 @@ final class Atom extends PrologObject //implements Serializable
     {
         return s_atomTable.size();
     }
-/*
+
     public static void printAtoms()
     {
-        Enumeration enum = s_atomTable.elements();
-        while (enum.hasMoreElements())
+        Enumeration en = s_atomTable.elements();
+        while (en.hasMoreElements())
         {
-            System.out.println(enum.nextElement());
+            System.out.println(en.nextElement());
         }
     }
-*/
+
     private Atom(final String strAtom)
     {
         m_strAtom   = strAtom;
