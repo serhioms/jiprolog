@@ -1,6 +1,4 @@
 /lib/
-*.jip
-
 /deploy/
 /todo/
 /*.jar
